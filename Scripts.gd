@@ -1,15 +1,17 @@
 extends CharacterBody2D
 ## add a way to commiunicate to circut
 const SPEED = 850.0
-const JUMP_VELOCITY = -1750.0
+const JUMP_VELOCITY = -2000.0
 var slot1 = 0
 var slot2 = 0
-
+var dash_cooldown = 0
 
 
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
+	if is_on_floor():
+		dash_cooldown = 0
 	if not is_on_floor():
 		velocity += 2 * get_gravity() * delta
 
@@ -21,8 +23,9 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("ui_left", "ui_right")
 
-	if Input.is_action_just_pressed("Dash") and(slot1 == 1 or slot2 == 1):
+	if Input.is_action_just_pressed("Dash") and(slot1 == 1 or slot2 == 1) and dash_cooldown == 0:
 		velocity.x = direction * SPEED * 10
+		dash_cooldown = 1
 		pass
 
 
