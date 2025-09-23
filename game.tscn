@@ -8,11 +8,11 @@
 texture = ExtResource("1_e2o6t")
 texture_region_size = Vector2i(512, 512)
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128.676, -144.368, 256, -144.368, 256, 256, -128.676, 256)
 1:0/0 = 0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -144.368, 256, -144.368, 256, 256, -256, 256)
 2:0/0 = 0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -144.368, 153.783, -144.368, 172.358, 256, -256, 256)
 3:0/0 = 0
 3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
 4:0/0 = 0
@@ -22,25 +22,25 @@ texture_region_size = Vector2i(512, 512)
 6:0/0 = 0
 6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
 0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-122.238, -256, 256, -256, 256, 256, -128.676, 256)
 1:1/0 = 0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
 2:1/0 = 0
-2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 172.358, -256, 172.358, 256, -256, 256)
 3:1/0 = 0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
 4:1/0 = 0
-4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 53.3533, -256, 256, -88.9587, 256, 256, -256, 256)
 5:1/0 = 0
-5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -47.0764, 27.7996, -256, 256, -256, 256, 256, -256, 256)
 6:1/0 = 0
 6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
 0:2/0 = 0
-0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-83.1684, -87.876, -83.1684, -256, 256, -256, 256, 87.876, -26.6766, 62.7686)
 1:2/0 = 0
 1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
 2:2/0 = 0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -47.0764, -256, -256, 145.937, -256, 108.276, 87.876, -256, 106.707)
 3:2/0 = 0
 3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
 4:2/0 = 0
@@ -113,17 +113,26 @@ sources/1 = SubResource("TileSetAtlasSource_fc0e3")
 
 [node name="Game" type="Node2D"]
 
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_7jktm")
-format = 2
-layer_0/tile_data = PackedInt32Array(65529, 1, 0, 65530, 65537, 0, 65531, 65537, 0, 65532, 65537, 0, 65533, 65537, 0, 65534, 65537, 0, 65535, 65537, 0, 0, 65537, 0, 1, 65537, 0, 2, 65537, 0, 3, 65537, 0, 4, 65537, 0, 5, 65537, 0, 6, 65537, 0, 7, 65537, 0, 8, 65537, 0, 9, 131073, 0, 196617, 131073, 2, 262137, 1, 2, 196601, 1, 1, 131065, 1, 1, 262138, 65537, 2, 262139, 65537, 2, 262140, 65537, 2, 262141, 65537, 2, 262142, 65537, 2, 262143, 65537, 2, 196608, 65537, 2, 196609, 65537, 2, 196610, 65537, 2, 196611, 65537, 2, 196612, 65537, 2, 196613, 65537, 2, 196614, 65537, 2, 196615, 65537, 2, 196616, 65537, 2, 65545, 131073, 1, 131081, 131073, 1, 131080, 65537, 1, 131079, 65537, 1, 131078, 65537, 1, 131077, 65537, 1, 131076, 65537, 1, 131075, 65537, 1, 131074, 65537, 1, 131073, 65537, 1, 131072, 65537, 1, 65536, 65537, 1, 65537, 65537, 1, 65538, 65537, 1, 65539, 65537, 1, 65540, 65537, 1, 65541, 65537, 1, 65542, 65537, 1, 65543, 65537, 1, 131066, 65537, 1, 131067, 65537, 1, 131068, 65537, 1, 131069, 65537, 1, 131070, 65537, 1, 131071, 65537, 1, 196607, 65537, 1, 196606, 65537, 1, 196605, 65537, 1, 196604, 65537, 1, 196603, 65537, 1, 196602, 65537, 1, 65544, 65537, 1)
-
 [node name="Player" parent="." instance=ExtResource("2_feb5d")]
-position = Vector2(337, -658)
+position = Vector2(-3321, -139)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(0.25, 0.25)
 position_smoothing_enabled = true
 
 [node name="Circut" parent="." instance=ExtResource("3_feb5d")]
-position = Vector2(1613, -115)
+position = Vector2(-733, 888)
+metadata/Variant = 2
+
+[node name="Circut2" parent="." instance=ExtResource("3_feb5d")]
+position = Vector2(527, -81)
+metadata/Variant = 1
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-21, 33)
+tile_set = SubResource("TileSet_7jktm")
+format = 2
+layer_0/tile_data = PackedInt32Array(262137, 1, 2, 196601, 1, 1, 131065, 1, 1, 262138, 65537, 2, 262139, 65537, 2, 262140, 65537, 2, 262141, 65537, 2, 262142, 65537, 2, 262143, 65537, 2, 196608, 65537, 2, 131072, 65537, 1, 0, 1, 0, 131071, 1, 0, 131067, 131073, 0, 65530, 131073, 0, 65529, 1, 0, 196604, 65537, 0, 196605, 65537, 0, 196606, 65537, 0, 196607, 327681, 1, 65536, 327681, 1, 196603, 262145, 1, 131066, 262145, 1, 196602, 65537, 1, 1, 131073, 0, 65537, 131073, 1, 131073, 131073, 1, 196596, 131073, 0, 196594, 1, 0, 327666, 1, 2, 327667, 65537, 2, 196595, 65537, 0, 262130, 1, 1, 262131, 65537, 1, 327669, 131073, 2, 262133, 131073, 0, 262132, 262145, 1, 327668, 65537, 2, 196609, 131073, 2, 6, 327681, 1, 65542, 65537, 1, 131078, 65537, 1, 196614, 65537, 2, -65529, 327681, 1, 7, 65537, 1, 65543, 65537, 1, 131079, 65537, 1, 196615, 65537, 2, -131064, 65537, 0, -65528, 65537, 1, 8, 65537, 1, 65544, 65537, 1, 131080, 65537, 1, 196616, 65537, 2, -131063, 65537, 0, -65527, 65537, 1, 9, 65537, 1, 65545, 65537, 1, 131081, 65537, 1, 196617, 65537, 2, -131062, 65537, 0, -65526, 65537, 1, 10, 65537, 1, 65546, 262145, 0, 131082, 131073, 1, 196618, 131073, 5, -131061, 131073, 0, -65525, 131073, 1, 11, 131073, 1, 65547, 131073, 2, 196619, 131073, 3, 5, 1, 0, 65541, 1, 1, 131077, 1, 1, 196613, 1, 2, -65530, 1, 0, -131065, 1, 0)
+
+[connection signal="grabbed" from="Circut" to="Player" method="_on_circut_grabbed"]
+[connection signal="grabbed" from="Circut2" to="Player" method="_on_circut_grabbed"]

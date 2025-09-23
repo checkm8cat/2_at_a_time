@@ -1,13 +1,8 @@
 extends Node2D
-var variant = get_meta("Variant")
-const MOVE = 1
+const DASH = 1
 const JUMP = 2
 const CROUCH = 3
-signal grabbed
-
-
-
-
+signal grabbed(variant)
 
 
 
@@ -22,7 +17,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	var variant = get_meta("Variant")
 	
-	if(variant == MOVE):
+	if(variant == DASH):
 		$Sprite2D.modulate = Color(0, 1, 1, 1)
 	if(variant == JUMP):
 		$Sprite2D.modulate = Color(1, 0, 1, 1)
@@ -34,6 +29,6 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	grabbed.emit(variant)
+	grabbed.emit(get_meta("Variant"))
 	queue_free()
 	pass # Replace with function body.
