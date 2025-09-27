@@ -16,3 +16,9 @@ shape = SubResource("RectangleShape2D_onrkg")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(250, 250)
 texture = SubResource("CanvasTexture_i3pqv")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.125
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
