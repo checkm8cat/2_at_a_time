@@ -66,7 +66,9 @@ func _on_circut_grabbed(variant) -> void:
 
 
 func _on_timer_timeout() -> void:
-	velocity.y = c_velocityy
+	velocity.y = 0
+	print(c_velocityx)
+	print(c_velocityy)
 	c_velocityx = 0
 	c_velocityy = 0
 	pass # Replace with function body.
